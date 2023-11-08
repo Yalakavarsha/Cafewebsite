@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply a common font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Define styles for the navigation bar */
+nav {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Style the menu card container */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu_card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the menu card image */
+.menu_image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+/* Style the menu card information */
+.menu_info {
+    margin-top: 10px;
+}
+
+.menu_info h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.menu_info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.menu_icon {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.menu_icon i {
+    font-size: 20px;
+    color: #fac031;
+}
+
+.menu_btn {
+    display: block;
+    background-color: #fac031;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Add any other styles you need for links and buttons */
+
+@media (max-width: 768px) {
+    .menu_card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
